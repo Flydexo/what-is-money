@@ -1,0 +1,13 @@
+@font-face {
+  src: url('./assets/fonts/VIKING.otf');
+  font-family: 'Viking';
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+body {
+  font-family: 'Viking';
+}
