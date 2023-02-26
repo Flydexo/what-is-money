@@ -34,7 +34,7 @@ export const SCENES: GameScene[] = [
 				},
 			},
 		],
-		music_url: '/musics/loading_screen.mp3',
+		music_url: '/musics/street.mp3',
 	},
 	{
 		background_url: '/backgrounds/scene_2.png',
@@ -43,7 +43,7 @@ export const SCENES: GameScene[] = [
 				message: "Vous croisez le regard d'un inconnu",
 			},
 		],
-		music_url: '/musics/loading_screen.mp3',
+		music_url: '/musics/street.mp3',
 	},
 	{
 		background_url: '/backgrounds/scene_3.png',
@@ -60,7 +60,7 @@ export const SCENES: GameScene[] = [
 					'Vous vous mettez a genoux, vous approchez votre main du dictionnaire',
 			},
 		],
-		music_url: '/musics/loading_screen.mp3',
+		music_url: '/musics/street.mp3',
 	},
 	{
 		background_url: '/backgrounds/scene_4.jpeg',
@@ -72,7 +72,7 @@ export const SCENES: GameScene[] = [
 				message: "Un homme s'approche de vous, il s'agit d'Aristote",
 			},
 		],
-		music_url: '/musics/loading_screen.mp3',
+		music_url: '/musics/aristote.mp3',
 	},
 	{
 		background_url: '/backgrounds/scene_4.jpeg',
@@ -170,7 +170,7 @@ export const SCENES: GameScene[] = [
 				},
 			},
 		],
-		music_url: '/musics/loading_screen.mp3',
+		music_url: '/musics/aristote.mp3',
 	},
 	{
 		background_url: '/backgrounds/scene_5.webp',
@@ -185,11 +185,11 @@ export const SCENES: GameScene[] = [
 				message: "Une femme s'approche de vous, il s'agit de Christine Lagarde",
 			},
 		],
-		music_url: '/musics/loading_screen.mp3',
+		music_url: '/musics/lagarde.mp3',
 	},
 	{
 		background_url: '/backgrounds/scene_5.webp',
-		music_url: '',
+		music_url: '/musics/lagarde.mp3',
 		dialogs: [
 			{
 				message:
@@ -280,11 +280,11 @@ export const SCENES: GameScene[] = [
 					"Un homme visage caché s'approche de vous, il s'agit de Satoshi Nakamoto",
 			},
 		],
-		music_url: '/musics/loading_screen.mp3',
+		music_url: '/musics/nakamoto.mp3',
 	},
 	{
 		background_url: '/backgrounds/scene_6.png',
-		music_url: '',
+		music_url: '/musics/nakamoto.mp3',
 		dialogs: [
 			{
 				message:

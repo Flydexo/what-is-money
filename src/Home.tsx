@@ -3,12 +3,12 @@ import LoadingScreenAudio from './assets/audios/loading_screen.mp3';
 import { useGameSceneStore } from './stores/game';
 
 export const Home = () => {
-	const audio = useRef<HTMLAudioElement>();
+	const audio = useRef<HTMLAudioElement>(null);
 	const nextScene = useGameSceneStore((state) => state.nextScene);
 
 	useLayoutEffect(() => {
 		if (!audio.current) return;
-		audio.current.volume = 0.025;
+		audio.current.volume = 0.25;
 	});
 
 	return (

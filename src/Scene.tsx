@@ -5,14 +5,12 @@ import { useGameSceneStore } from './stores/game';
 export const Scene = ({ scene }: { scene: GameScene }) => {
 	const [dialogIndex, setDialogIndex] = useState(0);
 	const nextScene = useGameSceneStore((state) => state.nextScene);
-	const audio = useRef<HTMLAudioElement>();
+	const audio = useRef<HTMLAudioElement>(null);
 
 	useLayoutEffect(() => {
 		if (!audio.current) return;
-		audio.current.volume = 0.025;
+		audio.current.volume = 0.25;
 	});
-
-	console.log(dialogIndex);
 
 	const nextDialog = () => {
 		if (dialogIndex == scene.dialogs.length - 1) {
@@ -66,6 +64,7 @@ export const Scene = ({ scene }: { scene: GameScene }) => {
 							.fill(null)
 							.map((_, i) => (
 								<div
+									key={i}
 									className={`w-4 h-4 rounded-full ${
 										i <= dialogIndex ? 'bg-white' : 'bg-stone-700'
 									}`}
