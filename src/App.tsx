@@ -1,5 +1,11 @@
+import Home from './Home';
+import Scene from './Scene';
+import { useGameSceneStore } from './stores/game';
+
 function App() {
-  return <h1>Welcome</h1>;
+	const scene = useGameSceneStore((state) => state.scene);
+
+	return <>{scene ? <Scene scene={scene} /> : <Home />}</>;
 }
 
 export default App;

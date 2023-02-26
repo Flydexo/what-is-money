@@ -1,13 +1,23 @@
-@font-face {
-  src: url('./assets/fonts/VIKING.otf');
-  font-family: 'Viking';
-}
-
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
 @tailwind variants;
 
-body {
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
+}
+
+@font-face {
+  src: url('./assets/fonts/VIKING.otf');
   font-family: 'Viking';
 }

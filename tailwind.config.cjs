@@ -1,9 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    fontFamily: {
-      'viking': ['viking']
+    extend: {
+      fontFamily: {
+        'viking': ['viking']
+      },
+      'animation': {
+        'slide': 'slide 8s infinite'
+      }
     }
   },
   plugins: [],
